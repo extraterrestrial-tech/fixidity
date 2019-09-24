@@ -56,7 +56,7 @@ library FixidityLib {
 
     function subtract(Fixidity storage fixidity, int256 a, int256 b) public view returns (int256) {
     	int256 t = a - b;
-    	assert(t + a == b);
+    	assert(t + b == a);
     	return t;
     }
 
